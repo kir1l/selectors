@@ -1,0 +1,14 @@
+{
+  "name": "selectors",
+  "version": "1.0.0",
+  "description": "html classes/id to js selectors",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "camelcase": "^7.0.0"
+  }
+}

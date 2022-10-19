@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/css/style.css">
+    <title>javascript selectors</title>
+</head>
+
+<body>
+    <h1 class="title">Простой способ написания <br><span>JS</span> селекторов</h1>
+    <section class="advantages">
+        <p class="advantages__text">Каждый javaScript разработчик сталкивался с выборкой элементов из DOM. И все знают
+            насколько это долго и нудно вводить классы и id. А что делать если проект большой и одну и ту же операцию
+            надо повторить 50 раз? А можеть быть 100?</p>
+        <p class="advantages__bold" style="margin-bottom: 10px;">- Выход есть!</p>
+        <p>Этот сайт специально сделан для того что бы ускорить и сократить до минимума рутинную работу программистов
+            при выборке элементов из DOM.
+        </p>
+        <p style="margin: 18px 0;">- Имеет гибкую настройку под ваш стиль кода</p>
+        <p style="margin: 18px 0;">- Автоматически переводит названия в camelCase</p>
+        <p style="margin: 18px 0;">- Удаляет деблирующиеся имена</p>
+        <p style="margin: 18px 0;">- Ускоряет разработку</p>
+        <p style="text-align: center; font-size: 25px; font-weight: bold; margin: 10px 0;">Инструкция:</p>
+        <p><span class="num">1</span>. Скопируйте фрагмент Вашего HTML кода, выборку классов и id которого нужно сделать
+        </p>
+        <p style="margin-top: 10px;"><span class="num">2</span>. Вставьте код в конвертер</p>
+        <div class="result__box">
+            <textarea class="html-code" disabled></textarea>
+            <div class="arrow"><img src="assets/images/svg/arrow.svg" alt="arrow"></div>
+            <textarea class="result" disabled></textarea>
+        </div>
+        <p style="margin-bottom: 10px; text-align: center;"><span class="num">3</span>. Нажмите кнопку:</p>
+        <button class="btn" id="testBtn" style="margin-bottom: 20px;">конвертировать</button>
+        <p>- Готово! на данные операции потребуется максимум <span style="color: rgb(201, 201, 2);">20</span> секунд,
+            если бы вы делали
+            выборку самостоятельно это бы
+            заняло намного больше времени</p>
+        <hr style="height: 2px; background-color: black; border: none; max-width: 450px; margin-top: 30px;">
+        <p style="font-size: 27px; font-weight: 600; margin-top: 30px; text-align: center; margin-bottom: 20px;">
+            Попробуйте сами:</p>
+    </section>
+    <div class="program__box">
+        <div class="area__box">
+            <p class="area__title">HTML</p>
+            <textarea id="input"></textarea>
+            <button class="process btn">получить JS код</button>
+        </div>
+        <div class="area__box">
+            <p class="area__title">JS</p>
+            <textarea id="out"></textarea>
+            <button id="copy" class="btn">скопировать</button>
+        </div>
+    </div>
+    <hr style="height: 2px; background-color: black; border: none; max-width: 450px; margin: 25px auto;">
+    <div class="settings__title">Настройки:</div>
+    <div class="settings__body">
+        <div class="params__item">
+            <div class="item__title">Только классы</div>
+            <label class="switch2">
+                <input type="checkbox" id="onlyClasses">
+                <span class="slider2"></span>
+            </label>
+            <div class="item__description">- выбирать только классы</div>
+        </div>
+        <div class="params__item">
+            <div class="item__title">Только ID</div>
+            <label class="switch2">
+                <input type="checkbox" id="onlyId">
+                <span class="slider2"></span>
+            </label>
+            <div class="item__description">- выбирать только ID</div>
+        </div>
+        <div class="params__item">
+            <div class="item__title">QuerySelector</div>
+            <label class="switch2">
+                <input type="checkbox" id="querySelector">
+                <span class="slider2"></span>
+            </label>
+            <div class="item__description">Использовать QuerySelector/GetElementById</div>
+        </div>
+        <div class="params__item">
+            <div class="item__title">Краткая запись</div>
+            <label class="switch2">
+                <input type="checkbox" id="useShorthand">
+                <span class="slider2"></span>
+            </label>
+            <div class="item__description">- Использование короткой записи переменных</div>
+        </div>
+        <div class="params__item">
+            <div class="item__title">Оператор</div>
+            <div class="dropdown">
+                <div class="select">
+                    <span class="selected">const</span>
+                    <div class="caret"></div>
+                </div>
+                <ul class="menu">
+                    <li class="active">const</li>
+                    <li>let</li>
+                    <li>var</li>
+                </ul>
+            </div>
+            <div class="item__description">- Выбор оператора для переменных</div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__body">
+            <div class="footer__license">Автор: Балушин Кирилл</div>
+            <a href="https://github.com/kir1l" class="footer__link"><img src="assets/images/svg/github.svg"
+                    alt="gitgub logo" class="footer__img">Github: Kir1l</a>
+        </div>
+    </footer>
+    <script src="scripts/script.js" type="module"></script>
+</body>
+
+</html>
